@@ -5,10 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="/style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type ="text/javascript" src="/socket.io/socket.io.js"></script>
-		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		
 		<script type="text/javascript">
 			$(document).ready(function(){
 				var socket = io.connect();
@@ -67,23 +64,27 @@
 		</script>
 	</head>
 	<body>
-		<div id="adduser" class="adduser">
+		<div id="adduser">
+			<img id="blah" src="/blah.png" alt="logo">
 			<p id="error"></p>
+
 			<form id="UserForm">
-				<input id="username" type="text" name="newuser" placeholder="Create Username">
-				<button class="btn waves-effect waves-light" id="newuser"><i class='material-icons right'>OK</i></button>
+				<input id="username" type="text" name="newuser" placeholder="Create Username" autocomplete="off"><br>
+				<button id="newuser">Lets Blah!</button>
 			</form>
 		</div>
 		<div id="body" class="body">
 			<div class="wrapper">
-				<u><h1>Conversation Board</h1></u>
+					<img id="blah2" src="/blah.png" alt="logo">
+				
 				<div id="chat" class="Board">
 					
 				</div>
 				<div class="newmsg">
+					
 					<form id="messageForm">
-						<input id="type" type="text" name="newmsg" placeholder="Enter your message here...">
-						<button class="btn waves-effect waves-light" id="button"><i class='material-icons right'>Send</i></button>
+						<input id="type" type="text" name="newmsg" placeholder="&nbsp; &nbsp;Enter your message here...">
+						<button  id="button">BLAH</button>
 					</form>
 				</div>
 			</div>
