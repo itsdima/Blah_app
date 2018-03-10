@@ -45,6 +45,7 @@
 						msgs += '<p class="displaymsg"><strong>'+data[y].user+'</strong>: '+ data[y].msg + '</p>';
 					}
 					chat.html(msgs);
+					chat.scrollTop(999);
 				});
 				socket.on('append', function(data){
 					msgs = '';
@@ -52,6 +53,7 @@
 						msgs += '<p class="displaymsg"><strong>'+data[x].user+'</strong>: '+ data[x].msg + '</p>';
 					}
 					chat.html(msgs);
+					chat.scrollTop(999);
 				});
 				socket.on('get users', function(data){
 					var html = '';
@@ -83,7 +85,7 @@
 				<div class="newmsg">
 					
 					<form id="messageForm">
-						<input id="type" type="text" name="newmsg" placeholder="&nbsp; &nbsp;Enter your message here...">
+						<textarea id="type" placeholder="&nbsp; &nbsp;Enter your message here..."></textarea>
 						<button  id="button">BLAH</button>
 					</form>
 				</div>

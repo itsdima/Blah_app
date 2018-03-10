@@ -27,12 +27,12 @@ body{
 	opacity: 0.7;
 	background-color: rgb(130, 243, 243);
 	border-radius: 5px;
+	overflow: hidden;
+}
+#chat:hover {
+	overflow-y: scroll;
 }
 
-/* .newmsg {
-	height: 125px; 
-	width: 50%;
-} */
 #adduser {
 	text-align: center;
 	margin-top: 5%;
@@ -42,9 +42,6 @@ body{
 	background-color: rgb(83, 76, 175);
 	color: white;
 }
-/* .eachuser{
-	border-bottom: 2px solid silver; 
-} */
 
 .displaymsg {
 	padding-left: 4px;
@@ -54,13 +51,14 @@ body{
 
 
 #type {
-	
+	overflow-y: hidden;
 	margin-left: -6%;
 	width: 50%;
 	height: 50px;
 	font-size: 20px;
 	border: 2px solid black;
 	border-radius: 5px;
+	resize: none;
 }
 
 .users{
