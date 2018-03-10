@@ -49,7 +49,7 @@ io.sockets.on('connection', function(socket){
 
 	//add new user
 	socket.on('new user', function(data, callback){
-		if(users.indexOf(data) != -1){
+		if(users.indexOf(data) != -1 || data == ''){
 			callback(false);
 		}
 		else{

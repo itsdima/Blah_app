@@ -26,6 +26,10 @@ body{
 	border: 2px solid rgb(83, 76, 175);
 	background-color: white;
 	border-radius: 5px;
+	overflow: hidden;
+}
+#chat:hover {
+	overflow-y: scroll;
 }
 
 #adduser {
@@ -46,11 +50,14 @@ body{
 
 
 #type {
+
 	width: 36%;
-	height: 50px;
+	overflow-y: hidden;
+  height: 50px;
 	font-size: 20px;
 	border: 2px solid rgb(54, 54, 54);
 	border-radius: 5px;
+	resize: none;
 }
 #button{
 	border-radius: 5px;
